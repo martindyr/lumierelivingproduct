@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Elements */
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #CCCCCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+header a {
+    color: #000;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+header a:hover {
+    color: #fff;
+}
+
+header img {
+    height: 80px;
+    width: auto;
+}
+
+nav {
+    gap: 25px;
+    display: flex;
+}
+
+body {
+    /* Fallback background color */
+    background-color: #f5f5f5;
+    /* Texture */
+    background-image: url("/images/marble-texture-jpg.jpg");
+    background-size: 200%;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 45px;
+    background-color: #CCCCCC;
+    font-size: 12px;
+}
+
+/* Banner */
+.banner-sale img {
+    width: 100%;
+    padding-bottom: 30px;
+    filter: brightness(1.15);
+}
+
+/* Product */
+.product-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.product-section h2 {
+    color: #000;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-description {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.product-description div img {
+    height: auto;
+    width: 25px;
+}
+
+.product-description div {
+    display: flex;
+    gap: 5px;
+}
+
+.product img {
+    height: auto;
+    width: 100%;
+}
+
+.product button {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.product button {
+    background-color: #263636;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #0c1111;
+}
+
+.tripple-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tripple-banner div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tripple-banner img:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.tripple-banner div img {
+    height: auto;
+    width: 49%;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .product-section,
+    .tripple-banner {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    h3 {
+        font-size: 14px;
+    }
+
+    header a {
+        font-size: 16px;
+    }
+
+    header img {
+        height: 50px;
+    }
+}
